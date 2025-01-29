@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sbi5vdr.css">
+    <link rel="stylesheet" href="assets/scss/estilos.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light rojo-bg text-gothicus arreglo-nav">
+      <div class="container-fluid ms-5 me-5">
+        <a href="#" ><img src="assets/img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse amarillo" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0 text-gothicus nav-link">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item text-gothicus">
+              <a class="nav-link text-gothicus" href="conciertos.html">Conciertos</a>
+            </li>
+            <li class="nav-itemk">
+              <a class="nav-link" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="album.html">Album</a>
+            </li>
+            <li class="ps-3">
+              <a onclick="traducir()" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-translate text-light " viewBox="0 0 16 16">
+                <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                
+              </svg></a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Lenguaje</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <a onclick="espanol()" href="#" class="nolisttype" data-bs-dismiss="modal"><img class="icons" src="assets/img/bandera-espana.png" alt="bandera espanola">Español</a>
+        <a onclick="ingles()" href="#" class="nolisttype" data-bs-dismiss="modal"><img class="icons" src="assets/img/bandera-ingles.png" alt="bandera estados unidos">Ingles</a>
+      </div>
+    </div>
+  </div>
+</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Cierra Header-->
+  <main class="bg-black">
+    <h1 class="pt-5 pb-5 text-center text-light text-gothicus-roman">Tienda</h1>
+    <!--Dropwdown-->
+    <div class="dropdown pb-5 ">
+      <div class="container">
+
+      
+        <button class="btn btn-secondary dropdown-toggle mr-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Categorias
+        </button>
+        <ul class="dropdown-menu">
+          <li><a onclick="categoria_todas()" class="dropdown-item" href="#">Todas</a></li>
+          <li><a onclick="categoria_album()" class="dropdown-item" href="#">Albumes</a></li>
+          <li><a onclick="categoria_ropa()" class="dropdown-item" href="#">Ropa</a></li>
+          <li><a onclick="categoria_accesorios()" class="dropdown-item" href="#">Accesorios</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--Articulos-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="row" id="productos">
+                <div class="col-md-4">
+                    <h4 id="ropa" class=" text-nowrap overflow-hidden rojo text-center">Camiseta del rey Jonas</h4>
+                    <a href="detalles-producto.html">
+                    <img class="btn btn-warning img-fluid" src="assets/img/Golden_King_front_1800x1800.webp" alt="moneda_avaro" ></a>
+                    <p class="amarillo text-gesta-medium text-center">9.550 CLP</p>
+                </div>
+                <div  id="ropa" class="col-md-4 ">
+                    <h4 class=" text-nowrap overflow-hidden rojo text-center">Gorra Avatar Vertigo</h4>
+                    <img class="btn btn-warning img-fluid" src="assets/img/VertigoSnapbackHatside_1800x1800.webp" alt="moneda_avaro">
+                    <p class="rojo text-center text-gesta-medium">9.550 CLP</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class=" text-nowrap overflow-hidden amarillo ">Abre latas Avatar</h4>
+                    <img class="btn btn-warning img-fluid" src="assets/img/COA_bottle_opener_keychain_1800x1800.webp" alt="moneda_avaro">
+                    <p class="amarillo text-gesta-medium">9.550 CLP</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class=" text-nowrap overflow-hidden amarillo ">Parche de avatar country</h4>
+                    <img class="btn btn-warning img-fluid" src="assets/img/AC_COA_small_patch_1800x1800.webp" alt="moneda_avaro">
+                    <p class="amarillo text-gesta-medium">9.550 CLP</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class=" text-nowrap overflow-hidden amarillo ">Collar con la sigla Avatar</h4>
+                    <img class="btn btn-warning img-fluid" src="assets/img/ANecklace_1800x1800.webp" alt="collar">
+                    <p class="amarillo text-gesta-medium">9.550 CLP</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class=" text-nowrap overflow-hidden amarillo ">Moneda Avaro </h4>
+                    <img class="btn btn-warning img-fluid" src="assets/img/moneda.webp" alt="moneda_avaro">
+                    <p class="amarillo text-gesta-medium">9.550 CLP</p>
+                </div>
+                <div class="col-md-4">
+                  <h4 class=" text-nowrap overflow-hidden amarillo ">CD album Avatar Country</h4>
+                  <img class="btn btn-warning img-fluid" src="assets/img/album_avatar_c.jpg" alt="moneda_avaro">
+                  <p class="amarillo text-gesta-medium">9.550 CLP</p>
+              </div>
+              <div class="col-md-4">
+                  <h4 class=" text-nowrap overflow-hidden amarillo ">CD Album Black Waltz</h4>
+                  <img class="btn btn-warning img-fluid" src="assets/img/album_black-w.webp" alt="collar">
+                  <p class="amarillo text-gesta-medium">9.550 CLP</p>
+              </div>
+              <div class="col-md-4">
+                  <h4 class=" text-nowrap overflow-hidden amarillo ">CD Album Feathers & Flesh</h4>
+                  <img class="btn btn-warning img-fluid" src="assets/img/album_FF.webp" alt="moneda_avaro">
+                  <p class="amarillo text-gesta-medium">9.550 CLP</p>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <div id="footeraqui">
+
+    </div>
+
+  </footer>
+    <!--Cierra Header-->
+  <!--Vinculaciones JS-->
+  <script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+  <!--implementacion de Jquery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!--Script general-->
+  <script src="assets/js/script-general.js"></script>
+</body>
+</html>

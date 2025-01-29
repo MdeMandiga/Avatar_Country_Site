@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sbi5vdr.css">
+    <link rel="stylesheet" href="assets/scss/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+</head>
+<body onload="fancyboActivate()">
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light rojo-bg text-gothicus arreglo-nav">
+      <div class="container-fluid ms-5 me-5">
+        <a href="#" ><img src="assets/img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse amarillo" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0 text-gothicus nav-link">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item text-gothicus">
+              <a class="nav-link text-gothicus" href="conciertos.html">Conciertos</a>
+            </li>
+            <li class="nav-itemk">
+              <a class="nav-link" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="album.html">Album</a>
+            </li>
+            <li class="ps-3">
+              <a onclick="traducir()" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-translate text-light " viewBox="0 0 16 16">
+                <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"/>
+                <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"/>
+                
+              </svg></a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Lenguaje</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <a onclick="espanol()" href="#" class="nolisttype" data-bs-dismiss="modal"><img class="icons" src="assets/img/bandera-espana.png" alt="bandera espanola">Español</a>
+        <a onclick="ingles()" href="#" class="nolisttype" data-bs-dismiss="modal"><img class="icons" src="assets/img/bandera-ingles.png" alt="bandera estados unidos">Ingles</a>
+      </div>
+    </div>
+  </div>
+</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Cierra Header-->
+  <main class="bg-black ">
+    <!--VideoClip-->
+    <!--Album Avatar Country-->
+    <div class="contaner-fluid py-5 bg-black ">
+        <div id="album">
+            <div class="col-md-10 mx-auto ">
+                <div class="row">
+                <div class="col-md-6 ">
+                    <img class="w-100 img-start rounded" src="assets/img/DTWSxQ4X4AANwS2.jpeg" alt="album">
+                </div>
+                <div class="col-md-6 amarillo text-gothicus-roman text-center my-auto" >
+                    <h2 class="mx-auto mb-5">Avatar Country</h2>
+                    <ul class="text-start nolisttype amarillo text-gothicus-roman"> <h4>Escucha nuestras canciones</h4>
+                        <li onclick="offCanvaSong_1()" class="btn btn-dark amarillo gothicus-roman" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Glory to Our King</li>
+                        <li onclick="offCanvaSong_2()" class="btn btn-dark amarillo gothicus-roman" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Legend of the King</li>
+                        <li onclick="offCanvaSong_3()" class="btn btn-dark amarillo gothicus-roman" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">The King Welcomes You to Avatar Country</li>
+                        <li onclick="offCanvaSong_4()" class="btn btn-dark amarillo gothicus-roman" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Kings Harvest</li>
+                        <li onclick="offCanvaSong_5()" class="btn btn-dark amarillo gothicus-roman" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">The King Wants You</li>
+                        <li onclick="offCanvaSong_6()" class="btn btn-dark amarillo gothicus-roman" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">The King Speaks</li>
+                        <li onclick="offCanvaSong_7()" class="btn btn-dark amarillo gothicus-roman" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">A Statue of the King</li>
+                        <li onclick="offCanvaSong_8()" class="btn btn-dark amarillo gothicus-roman" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">King After King</li>
+                        <li onclick="offCanvaSong_9()" class="btn btn-dark amarillo gothicus-roman" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Silent Songs of the King Pt. 1: Winter Comes When the King Dreams of Snow</li>
+                        <li onclick="offCanvaSong_10()" class="btn btn-dark amarillo gothicus-roman" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Silent Songs of the King Pt. 2: The Kings Palace</li>
+                    </ul>
+                    <a href="tienda.html" class="btn btn-warning mx">Comprar album</a>
+                    <!--Audio King After King-->
+                    
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <p>Try scrolling the rest of the page to see this option in action.</p>
+          </div>
+          <img src="assets/img/album.webp" alt="">
+          </div>
+    </div>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+      </div>
+      </div>
+
+  </div>
+    <!--Integrantes-->
+    <h1 class="text-center text-gothicus text-light">Integrantes</h1>
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-md-10 text-light text-wrap mx-auto"> <!--Cambiar TEXT LIGHT-->
+              <div class="row mx-auto">
+                <div class="col-md-4 ">
+                  <h3>Jonas Jarlsby</h3>
+                  <div class="card w-100 border border-black rojo-bg">
+                    <a data-caption="Jonas Jarlsby" data-src="assets/img/integrante_elrey.webp" data-fancybox="gallery"><img src="assets/img/integrante_elrey.webp" class="card-img-top" alt="el rey">
+                    </a>
+                      <div class="card-body text-light">
+                        <strong>37 años</strong>
+                        <p class="card-text">Guitarrista. Rey de todo Avatar Country, maxima autoridad del reino, debe de dirigirse a el como su "majestad". Integrante desde 2001</p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-md-4 ">
+                  <h3>Johannes Eckerström</h3>
+                  <div class="card w-100 border border-black rojo-bg">
+                    <a data-caption="Johannes Eckerstrom" data-fancybox="gallery" data-src="assets/img/integrante_johan.avif">
+                    <img src="assets/img/integrante_johan.avif" class="card-img-top"></a>
+                    <div class="card-body text-light">
+                      <strong>38 años</strong>
+                      <p class="card-text">Vocalista, segundo al mando de el todo poderoso rey, no se anda con ningun tipo de rodeos, conoce mas de lo que imaginas. Integrante desde 2002.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mx-z">
+                  <h3>Henrik Sandelin</h3>
+                  <div class="card w-100 border border-black rojo-bg">
+                    <a data-caption="Henrik Sandelin" data-fancybox="gallery" data-src="assets/img/integrante_henrik.png">
+                    <img src="assets/img/integrante_henrik.png" class="card-img-top" alt="el rey"></a>
+                    <div class="card-body text-light">
+                      <strong>37 años</strong>
+                      <p class="card-text">Bajista, implecable y veras, no hay nadie como el, manejo esquisito de sus dedos con su instrumento musical. Integrante desde 2003</p>
+                    </div>
+                  </div>    
+                </div>
+                <div class="col-md-4 me-auto">
+                  <h3>John Alfredsson</h3>
+                  <div class="card w-100 border border-black rojo-bg">
+                    <a data-caption="John Alfredsson" data-fancybox="gallery" data-src="assets/img/integrante_john.jpeg">
+                    <img src="assets/img/integrante_john.jpeg" class="card-img-top" alt="el rey"></a>
+                    <div class="card-body text-light">
+                      <strong>38 años</strong>
+                      <p class="card-text">Baterista, implecable y veras, no hay nadie como el, manejo esquisito de sus dedos con su instrumeto musical. Integrante desde 2001.</p>
+                    </div>
+                  </div>    
+                </div>
+                <div class="col-md-4 my-auto ">
+                  <img class="img-fluid rounded-circle border border-danger-subtle" src="assets/img/0530-avatar-photo_-credit__johan_carlen-w.webp" alt="foto_grupal_de_avatar">
+                </div>
+                <div class="col-md-4 ms-auto">
+                  <h3>Tim Öhrström</h3>
+                  <div class="card w-100 border border-black rojo-bg">
+
+                    <a data-caption="Tim Öhrström" data-fancybox="gallery" data-src="assets/img/integrante_tom.jpg">
+                    <img src="assets/img/integrante_tom.jpg" class="card-img-top" alt="el rey"></a>
+                    <div class="card-body text-light">
+                      <strong>34 años</strong>
+                      <p class="card-text">Guitarrista, implecable y veras, no hay nadie como el, manejo esquisito de sus dedos con su instrumeno musical. Integrante desde 2011.</p>
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <div id="footeraqui">
+
+    </div>
+      <!--Cierra Header-->
+  <!--Vinculaciones JS-->
+  <script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+  <!--implementacion de Jquery-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!--Plugins-->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <!--Script general-->
+  <script src="assets/js/script-general.js"></script>
+  </footer>
+  </body>
+  </html>
